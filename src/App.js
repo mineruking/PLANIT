@@ -1,24 +1,45 @@
 import logo from './logo.svg';
 import './App.css';
-import Button from 'react-bootstrap/Button';
-import Stack from 'react-bootstrap/Stack';
+import 'bootstrap/dist/css/bootstrap.css';
 import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 
-function App() {
+function main() {
   return (
-    <div className="App">
-        <Stack gap={3}>
-          <div className="p-2">{'Hello'}<Button as="input" type="button" value="Input" /></div>
-          <div className="p-2">Second item</div>
-          <div className="p-2">Third item</div>
-        </Stack>
-      
-    </div>
+    <>
+      <Navbar bg="light" data-bs-theme="light">
+        <Container>
+          <Navbar.Brand href="#home"><img
+              alt="   "
+              src={logo}
+              width="100"
+              height="30"
+              className="LOGO"
+            /></Navbar.Brand>
+        </Container>
+        <Container>
+
+        </Container>
+        <Container>
+
+        </Container>
+        <Container>
+
+        </Container>
+        <Container>
+
+        </Container>
+        <Container>
+          <Nav className="me-auto">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#features">Features</Nav.Link>
+            <Nav.Link href="#pricing">Pricing</Nav.Link>
+          </Nav>
+        </Container>
+      </Navbar>
+    </>
   );
 }
 
-export default App;
+export default main;
