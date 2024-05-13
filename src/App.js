@@ -1,5 +1,5 @@
 import React from 'react'; // React를 임포트합니다.
-import logo from './logo.svg';
+import logo from './homeLogo.svg';
 import wallpaper from './images/wallpaper.jpg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
