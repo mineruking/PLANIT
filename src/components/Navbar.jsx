@@ -16,7 +16,7 @@ function Menu() {
               height="35"
               className="d-inline-block align-top"
             />{' '}</Navbar.Brand>
-      <Nav className="ml-auto">
+      <Nav className="me-auto">
         <Nav.Link href="notification">공지사항</Nav.Link>
         <Nav.Link href="aboutus">회사 소개</Nav.Link>
         <Nav.Link href="product">제품 소개</Nav.Link>
