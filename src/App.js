@@ -6,10 +6,11 @@ import AboutProduct from './Pages/Menu/AboutProduct.jsx';
 import ContactUs from './Pages/Menu/ContactUs.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Routes, Route, Navigate} from "react-router-dom";
-
+import Menu from './components/Navbar.jsx';
 function App() {
   return (
     <div>
+      <Menu />
       <Routes>
         <Route path='/' element={<Main></Main>}></Route>
         <Route path='/aboutus' element={<AboutUs></AboutUs>}></Route>
