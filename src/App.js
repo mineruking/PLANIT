@@ -7,6 +7,7 @@ import ContactUs from './Pages/Menu/ContactUs.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Routes, Route, Navigate} from "react-router-dom";
 import Menu from './components/Navbar.jsx';
+import Info from './components/information.jsx';
 function App() {
   return (
     <div>
@@ -18,6 +19,7 @@ function App() {
         <Route path='/support' element={<ContactUs></ContactUs>}></Route>
         <Route path='/notification' element={<Notification></Notification>}></Route>
       </Routes>
+      <Info />
     </div>
   );
 }
