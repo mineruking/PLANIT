@@ -18,7 +18,7 @@ function Info() {
                         className="d-inline-block align-top mb-4"
                     />
                     </div>
-      </Col>
+            </Col>
             <Col>
             <div className="info-text">
             <p><strong>대표자 :</strong> 인충교</p>
@@ -27,7 +27,7 @@ function Info() {
             <p><strong>전화 :</strong> 043-263-8648</p>
             <p><strong>팩스 :</strong> 043-263-8648</p>
             <p><strong>이메일 :</strong> planit7931@naver.com</p>
-        </div>
+            </div>
             </Col>
         </Row>
     </Container>
