@@ -7,11 +7,11 @@ import ContactUs from './Pages/Menu/ContactUs.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Routes, Route, Navigate} from "react-router-dom";
 import Menu from './components/Navbar.jsx';
-import Info from './components/information.jsx';
+import Footer from './components/footer.jsx';
 function App() {
   return (
     <div>
-      <Menu />
+      <Menu/>
       <Routes>
         <Route path='/' element={<Main></Main>}></Route>
         <Route path='/aboutus' element={<AboutUs></AboutUs>}></Route>
@@ -19,7 +19,7 @@ function App() {
         <Route path='/support' element={<ContactUs></ContactUs>}></Route>
         <Route path='/notification' element={<Notification></Notification>}></Route>
       </Routes>
-      <Info />
+      <Footer/>
     </div>
   );
 }

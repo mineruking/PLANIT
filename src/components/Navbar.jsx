@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Menu() {
   return (
-    <Navbar style={{ backgroundColor: 'transparent', position: 'absolute', top: 0, zIndex: 1 }} variant='light'>
+    <Navbar style={{ backgroundColor: 'transparent', position: 'fixed', top: 0, width: '100%', zIndex: 1000 }} variant='light'>
     <Container className="justify-content-between">
       <Navbar.Brand href="/"><img
               alt=""
@@ -16,13 +16,13 @@ function Menu() {
               height="35"
               className="d-inline-block align-top"
             />{' '}</Navbar.Brand>
-      <Nav className="me-auto">
-        <Nav.Link href="notification">공지사항</Nav.Link>
-        <Nav.Link href="aboutus">회사 소개</Nav.Link>
-        <Nav.Link href="product">제품 소개</Nav.Link>
-        <Nav.Link href="support">고객 지원</Nav.Link>
-      </Nav>
     </Container>
+    <Nav className="me-auto">
+        <Nav.Link href="notification" style={{ fontSize: '18px', fontWeight: 'bold' }}>공지사항</Nav.Link>
+        <Nav.Link href="aboutus" style={{ fontSize: '18px', fontWeight: 'bold' }}>회사 소개</Nav.Link>
+        <Nav.Link href="product" style={{ fontSize: '18px', fontWeight: 'bold' }}>제품 소개</Nav.Link>
+        <Nav.Link href="support" style={{ fontSize: '18px', fontWeight: 'bold' }}>고객 지원</Nav.Link>
+      </Nav>
   </Navbar>
   );
 }
