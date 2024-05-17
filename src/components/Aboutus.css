@@ -85,3 +85,53 @@
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
+.titletext3 {
+  color: #AA1439;
+  font-size: 25px;
+}
+
+.text-container4 {
+  max-width: 50%; /* 텍스트 컨테이너의 최대 너비 설정 */
+  padding: 60px;
+  text-align: center;
+}
+
+.Fourth-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 150px; /* 컨테이너에 패딩 추가 */
+  background-color: #FEEDF1; /* 배경색상 변경 */
+}
+
+.picture4 {
+  height: 450px;
+  width: 750px; /* 수정: weight -> width */
+  padding: 15px;
+}
+
+.titletext4 {
+  color: #FAAC04;
+  font-size: 25px;
+}
+
+.text-container5 {
+  max-width: 50%; /* 텍스트 컨테이너의 최대 너비 설정 */
+  padding: 60px;
+  text-align: center;
+}
+
+.Fifth-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding: 150px; /* 컨테이너에 패딩 추가 */
+  background-color: #FFFDF8; /* 배경색상 변경 */
+}
+
+.Subtext2 {
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+}

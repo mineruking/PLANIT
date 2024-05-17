@@ -5,6 +5,11 @@ import '../../components/Aboutus.css'; // 경로에 맞게 수정
 import pic1 from '../../images/resource 2.png';
 import pic2 from '../../images/resource 1.png';
 import pic3 from '../../images/resource 3.jpg';
+import pic4 from '../../images/Hospital.png';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
 const AboutUs = () => {
   const navigate = useNavigate();
 
@@ -59,21 +64,87 @@ const AboutUs = () => {
                 className="picture3"
             /> 
             <div className="text-container3">
-            <div className="titletext2">
-              Product
-            </div>
-            <div className="Maintext">
-                안정적이고 안전하게
-            </div>
-            <div className="Subtext">
-                우리의 꿈은 모두가 문제없는 삶을 사는 것입니다.<br />
-                사용자의 의료검사 결과물이 전달되기 까지<br />
-                더 편리하고 확실하게 나오도록 추구합니다.<br />
-                우리의 가치를 하나에 제품에도 잘 녹아들도록<br />
-                꾸준히 관리하며 개발하고 있습니다.<br />
-            </div>
+              <div className="titletext2">
+                Product
+              </div>
+              <div className="Maintext">
+                  안정적이고 안전하게
+              </div>
+              <div className="Subtext">
+                  우리의 꿈은 모두가 문제없는 삶을 사는 것입니다.<br />
+                  사용자의 의료검사 결과물이 전달되기 까지<br />
+                  더 편리하고 확실하게 나오도록 추구합니다.<br />
+                  우리의 가치를 하나에 제품에도 잘 녹아들도록<br />
+                  꾸준히 관리하며 개발하고 있습니다.<br />
+              </div>
             </div>
       </div>
+      <div className="Fourth-container">
+        <div className="text-container4">
+                <div className="titletext3">
+                  Buisness Partner
+                </div>
+                <div className="Maintext">
+                  검증된 기술, <br />
+                  신뢰할 수 있는 회사
+                </div>
+                <div className="Subtext">
+                플래니트는 꾸준히 쌓아온 기술과 신뢰로<br />
+                7개의 병원과 한국건강관리협회의 모든 지부에<br />
+                기술을 납품하고 있습니다.
+                </div>
+              </div>
+            <img
+                alt=""
+                src={pic4}
+                className="picture4"
+            /> 
+      </div>
+        <div className="Fifth-container">
+          <div className="text-container5">
+                  <div className="titletext4">
+                    Location
+                  </div>
+                  <div className="Maintext">
+                    PLANIT Office
+                  </div>
+                  <div className="Subtext2">
+                    (주)플래니트 본사
+                  </div>
+                  <br />
+                  <br />
+                  <Container>
+                    <Row>
+                      <Col>
+                        주소 <br />
+                        <br />
+                        충청북도 청주시 서원구 충대로 1, <br/>
+                        충북대학교 학연산공동기술연구원(E9) 970호  (28644)
+                      </Col>
+                      <Col>
+                        Tel <br />
+                        <br />
+                        043)263-8648 (기술, 견적문의)
+                      </Col>
+                    </Row>
+                    <br/>
+                    <Row>
+                      <Col>
+                        찾아오시는 길<br />
+                        <br />
+                        플래니트는 충북대학교 “학연산 공동기술연구원(E9) 970호”에 위치하고 있습니다.<br />
+                        충북대학교로 찾아오셔서 후문에서 중앙도서관의 보이는 길에서 좌회전 하여 직진하면<br />
+                        위치해 있습니다.
+                      </Col>
+                      <Col>
+                        Fax <br />
+                        <br />
+                        043)263-8648 
+                      </Col>
+                    </Row>
+                </Container>
+                </div>
+        </div>
     </>
   );
 }
