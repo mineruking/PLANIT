@@ -25,6 +25,7 @@
   font-size: 55px;
   font-weight: bold;
   text-shadow: 1px 1px 3px #000;
+  padding: 60px;
 }
 
 .sub-text {
@@ -35,6 +36,7 @@
   color: #0C5A89;
   font-size: 25px;
   text-shadow: 1px 1px 3px #000;
+  padding: 60px;
 }
 
 .start-button {
