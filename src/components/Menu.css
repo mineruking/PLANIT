@@ -1,42 +1,4 @@
 /* Menu.css */
-.nav-link-hover-notification:hover {
-    color: #a5d0d6 !important; /* Change the color as desired */
-  }
-  
-  .nav-link-hover-aboutus:hover {
-    color: #f4defa !important; /* Change the color as desired */
-  }
-  
-  .nav-link-hover-product:hover {
-    color: #f7afc1 !important; /* Change the color as desired */
-  }
-  
-  .nav-link-hover-support:hover {
-    color: rgb(255, 255, 147) !important; /* Change the color as desired */
-  }
-.btn-reverse-color:hover {
-  background-color: #0C5A89 !important; /* 호버 시 배경색 */
-  color: white !important; /* 호버 시 글자색 */
-}
-.link-reverse-color-more:hover {
-  color: #523E5A !important; 
-}
-
-@media (max-width: 991px) {
-  .navbar-nav .nav-link {
-    font-size: 16px; /* 모바일 화면에서의 글자 크기 조정 */
-    font-weight: normal; /* 모바일 화면에서의 글자 두께 조정 */
-  }
-}
-
-.nav-link-hover-notification, .nav-link-hover-aboutus, .nav-link-hover-product, .nav-link-hover-support {
-  margin-right: 40px; /* 오른쪽 마진 추가 */
-  white-space: nowrap; /* Prevent line breaks */
-  overflow: visible; /* Hide content that overflows */
-  text-overflow: ellipsis; /* Show ellipsis for overflowing text */
-}
-
-/* Menu.css */
 .bg-container {
   position: relative;
   background-color: #f4f7f9;
@@ -45,7 +7,7 @@
 
 .wallpaper-container {
   position: relative;
-  height: 870px; /* 높이를 미디어 쿼리를 통해 조절할 예정 */
+  height: 870px;
 }
 
 .wallpaper-img {
@@ -58,9 +20,9 @@
   position: absolute;
   top: 35%;
   left: 50%;
-  transform: translate(-50%, -50%); /* 중앙 정렬 수정 */
+  transform: translate(-50%, -50%);
   color: #0C5A89;
-  font-size: 60px;
+  font-size: 55px;
   font-weight: bold;
   text-shadow: 1px 1px 3px #000;
 }
@@ -69,7 +31,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* 중앙 정렬 수정 */
+  transform: translate(-50%, -50%);
   color: #0C5A89;
   font-size: 25px;
   text-shadow: 1px 1px 3px #000;
@@ -79,7 +41,7 @@
   position: absolute;
   top: 65%;
   left: 50%;
-  transform: translate(-50%, -50%); /* 중앙 정렬 수정 */
+  transform: translate(-50%, -50%);
   background-color: transparent;
   color: #0C5A89;
   font-size: 30px;
@@ -93,13 +55,15 @@
   right: 55%;
   bottom: 10%;
   opacity: 1;
+  width: 700px;
+  height: auto;
 }
 
 .cd-text {
   position: absolute;
-  right: 50%;
-  bottom: 29%;
-  transform: translateX(50%); /* 오른쪽 정렬 수정 */
+  right: 30%;
+  bottom: 20%;
+  transform: translateX(50%);
   color: #0C5A89;
   font-size: 60px;
   font-weight: bold;
@@ -108,9 +72,9 @@
 
 .more-info-link {
   position: absolute;
-  right: 50%;
-  bottom: 25%;
-  transform: translateX(50%); /* 오른쪽 정렬 수정 */
+  right: 36%;
+  bottom: 17%;
+  transform: translateX(50%);
   color: #523E5A;
   font-size: 25px;
   text-shadow: 1px 1px 3px #000;

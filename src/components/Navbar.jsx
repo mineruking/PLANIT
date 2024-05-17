@@ -6,7 +6,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import logo from '../homeLogo.svg';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './Menu.css'; // Import the CSS file
+import './Navbar.css'; // Import the CSS file
 
 function Menu() {
   return (

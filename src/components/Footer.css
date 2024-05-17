@@ -2,14 +2,18 @@
 
 .footer-container {
     background-color: #f8f9fa; /* 배경 색상 */
-    padding: 20px 0; /* 패딩 */
+    padding: 0px 0; /* 패딩 */
     border-top: 1px solid #dee2e6; /* 테두리 */
+    width: auto;
+    height: 1px;
   }
   
   .logo-container {
     display: flex;
-    justify-content: center;
-    padding-bottom: 20px;
+    justify-content: left;
+    padding-bottom: 1px;
+    width: auto;
+    height: 30px;
   }
   
 
@@ -27,6 +31,8 @@
     .logo-container {
       justify-content: flex-start;
       padding-bottom: 0;
+        width: auto;
+        height: 50px;
     }
   }
   

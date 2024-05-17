@@ -1,0 +1,36 @@
+.nav-link-hover-notification:hover {
+    color: #a5d0d6 !important; /* Change the color as desired */
+  }
+  
+  .nav-link-hover-aboutus:hover {
+    color: #f4defa !important; /* Change the color as desired */
+  }
+  
+  .nav-link-hover-product:hover {
+    color: #f7afc1 !important; /* Change the color as desired */
+  }
+  
+  .nav-link-hover-support:hover {
+    color: rgb(255, 255, 147) !important; /* Change the color as desired */
+  }
+.btn-reverse-color:hover {
+  background-color: #0C5A89 !important; /* 호버 시 배경색 */
+  color: white !important; /* 호버 시 글자색 */
+}
+.link-reverse-color-more:hover {
+  color: #523E5A !important; 
+}
+
+@media (max-width: 991px) {
+  .navbar-nav .nav-link {
+    font-size: 16px; /* 모바일 화면에서의 글자 크기 조정 */
+    font-weight: normal; /* 모바일 화면에서의 글자 두께 조정 */
+  }
+}
+
+.nav-link-hover-notification, .nav-link-hover-aboutus, .nav-link-hover-product, .nav-link-hover-support {
+  margin-right: 80px; /* 오른쪽 마진 추가 */
+  white-space: nowrap; /* Prevent line breaks */
+  overflow: visible; /* Hide content that overflows */
+  text-overflow: ellipsis; /* Show ellipsis for overflowing text */
+}
