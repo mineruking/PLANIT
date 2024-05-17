@@ -1,0 +1,32 @@
+/* Footer.css */
+
+.footer-container {
+    background-color: #f8f9fa; /* 배경 색상 */
+    padding: 20px 0; /* 패딩 */
+    border-top: 1px solid #dee2e6; /* 테두리 */
+  }
+  
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+  
+
+  
+  .info-text {
+    font-size: 14px; /* 텍스트 크기 */
+    color: #6c757d; /* 텍스트 색상 */
+  }
+  
+  .info-text p {
+    margin-bottom: 0.5rem; /* 문단 여백 */
+  }
+  
+  @media (min-width: 768px) {
+    .logo-container {
+      justify-content: flex-start;
+      padding-bottom: 0;
+    }
+  }
+  

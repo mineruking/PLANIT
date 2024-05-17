@@ -1,0 +1,142 @@
+/* Menu.css */
+.nav-link-hover-notification:hover {
+    color: #a5d0d6 !important; /* Change the color as desired */
+  }
+  
+  .nav-link-hover-aboutus:hover {
+    color: #f4defa !important; /* Change the color as desired */
+  }
+  
+  .nav-link-hover-product:hover {
+    color: #f7afc1 !important; /* Change the color as desired */
+  }
+  
+  .nav-link-hover-support:hover {
+    color: rgb(255, 255, 147) !important; /* Change the color as desired */
+  }
+.btn-reverse-color:hover {
+  background-color: #0C5A89 !important; /* 호버 시 배경색 */
+  color: white !important; /* 호버 시 글자색 */
+}
+.link-reverse-color-more:hover {
+  color: #523E5A !important; 
+}
+
+@media (max-width: 991px) {
+  .navbar-nav .nav-link {
+    font-size: 16px; /* 모바일 화면에서의 글자 크기 조정 */
+    font-weight: normal; /* 모바일 화면에서의 글자 두께 조정 */
+  }
+}
+
+.nav-link-hover-notification, .nav-link-hover-aboutus, .nav-link-hover-product, .nav-link-hover-support {
+  margin-right: 40px; /* 오른쪽 마진 추가 */
+  white-space: nowrap; /* Prevent line breaks */
+  overflow: visible; /* Hide content that overflows */
+  text-overflow: ellipsis; /* Show ellipsis for overflowing text */
+}
+
+/* Menu.css */
+.bg-container {
+  position: relative;
+  background-color: #f4f7f9;
+  padding-bottom: 1000px;
+}
+
+.wallpaper-container {
+  position: relative;
+  height: 870px; /* 높이를 미디어 쿼리를 통해 조절할 예정 */
+}
+
+.wallpaper-img {
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
+}
+
+.main-text {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* 중앙 정렬 수정 */
+  color: #0C5A89;
+  font-size: 60px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.sub-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* 중앙 정렬 수정 */
+  color: #0C5A89;
+  font-size: 25px;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.start-button {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* 중앙 정렬 수정 */
+  background-color: transparent;
+  color: #0C5A89;
+  font-size: 30px;
+  padding: 10px 60px;
+  border: 1px solid #0C5A89;
+  border-radius: 7px;
+}
+
+.cd-img {
+  position: absolute;
+  right: 55%;
+  bottom: 10%;
+  opacity: 1;
+}
+
+.cd-text {
+  position: absolute;
+  right: 50%;
+  bottom: 29%;
+  transform: translateX(50%); /* 오른쪽 정렬 수정 */
+  color: #0C5A89;
+  font-size: 60px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.more-info-link {
+  position: absolute;
+  right: 50%;
+  bottom: 25%;
+  transform: translateX(50%); /* 오른쪽 정렬 수정 */
+  color: #523E5A;
+  font-size: 25px;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.link-reverse-color-more {
+  color: #0C5A89;
+  text-decoration: none;
+}
+
+/* 응답형 디자인을 위한 미디어 쿼리 */
+@media (max-width: 768px) {
+  .main-text, .cd-text {
+      font-size: 40px; /* 폰트 크기 조정 */
+  }
+
+  .sub-text, .more-info-link {
+      font-size: 20px; /* 폰트 크기 조정 */
+  }
+
+  .start-button {
+      font-size: 20px;
+      padding: 5px 30px;
+  }
+
+  .wallpaper-container {
+      height: auto; /* 높이 자동 조정 */
+  }
+}
