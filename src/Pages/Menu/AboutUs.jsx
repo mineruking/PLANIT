@@ -31,6 +31,9 @@ const AboutUs = () => {
       </div>
       <div className="Second-container">
         <div className="text-container2">
+          <div className="titletext1">
+            About Company
+          </div>
             <div className="Maintext">
                 의료전산 선진화기술<br />
                 개발의 원점
@@ -56,6 +59,9 @@ const AboutUs = () => {
                 className="picture3"
             /> 
             <div className="text-container3">
+            <div className="titletext2">
+              Product
+            </div>
             <div className="Maintext">
                 안정적이고 안전하게
             </div>

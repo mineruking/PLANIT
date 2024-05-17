@@ -1,4 +1,10 @@
 /* Aboutus.css */
+.titletext1 {
+  color: #036D83;
+  font-size: 25px;
+}
+
+
 .First-container {
   display: flex;
   justify-content: space-between;
@@ -11,6 +17,11 @@
   height: 300px;
   width: 300px; /* 수정: weight -> width */
   padding: 15px;
+}
+
+.titletext2 {
+  color: #53415E;
+  font-size: 25px;
 }
 
 .text-container2 {
@@ -69,3 +80,8 @@
   width: 900px; /* 수정: weight -> width */
   padding: 15px;
 }
+
+.picture1, .picture2, .picture3 {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
