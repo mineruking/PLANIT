@@ -114,15 +114,15 @@ const AboutUs = () => {
                   <br />
                   <br />
                   <Container>
-                    <Row>
+                    <Row>   
                       <Col>
-                        주소 <br />
+                        <strong style={{fontSize:"23px"}}>주소</strong><br />
                         <br />
                         충청북도 청주시 서원구 충대로 1, <br/>
                         충북대학교 학연산공동기술연구원(E9) 970호  (28644)
                       </Col>
                       <Col>
-                        Tel <br />
+                      <strong style={{fontSize:"23px"}}>Tel</strong><br />
                         <br />
                         043)263-8648 (기술, 견적문의)
                       </Col>
@@ -130,14 +130,14 @@ const AboutUs = () => {
                     <br/>
                     <Row>
                       <Col>
-                        찾아오시는 길<br />
+                        <strong style={{fontSize:"23px"}}>찾아오시는 길<br /></strong>
                         <br />
                         플래니트는 충북대학교 “학연산 공동기술연구원(E9) 970호”에 위치하고 있습니다.<br />
                         충북대학교로 찾아오셔서 후문에서 중앙도서관의 보이는 길에서 좌회전 하여 직진하면<br />
                         위치해 있습니다.
                       </Col>
                       <Col>
-                        Fax <br />
+                      <strong style={{fontSize:"23px"}}>Fax</strong><br />
                         <br />
                         043)263-8648 
                       </Col>

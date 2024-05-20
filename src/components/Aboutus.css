@@ -11,6 +11,7 @@
   align-items: center;
   padding: 150px; /* 컨테이너에 패딩 추가 */
   background-color: white; /* 배경색상 변경 */
+  height: 100vh; /* 화면 전체 높이만큼 컨테이너를 채우도록 설정 */
 }
 
 .picture1 {
@@ -47,6 +48,7 @@
   align-items: center;
   padding: 20px; /* 컨테이너에 패딩 추가 */
   background-color: #f6feff; /* 배경색상 변경 */
+  height: 100vh; /* 화면 전체 높이만큼 컨테이너를 채우도록 설정 */
 }
 
 .picture2 {
@@ -67,6 +69,7 @@
   align-items: center;
   padding: 20px; /* 컨테이너에 패딩 추가 */
   background-color: #fefaff; /* 배경색상 변경 */
+  height: 100vh; /* 화면 전체 높이만큼 컨테이너를 채우도록 설정 */
 }
 
 .text-container3 {
@@ -102,6 +105,7 @@
   align-items: center;
   padding: 150px; /* 컨테이너에 패딩 추가 */
   background-color: #FEEDF1; /* 배경색상 변경 */
+  height: 100vh; /* 화면 전체 높이만큼 컨테이너를 채우도록 설정 */
 }
 
 .picture4 {
@@ -128,6 +132,7 @@
   align-items: center;
   padding: 150px; /* 컨테이너에 패딩 추가 */
   background-color: #FFFDF8; /* 배경색상 변경 */
+  height: 100vh; /* 화면 전체 높이만큼 컨테이너를 채우도록 설정 */
 }
 
 .Subtext2 {

@@ -1,0 +1,43 @@
+.First-container {
+    display: flex;
+    justify-content: center; /* 수평 가운데 정렬 */
+    align-items: center; /* 수직 가운데 정렬 */
+    height: 100vh; /* 화면 전체 높이만큼 컨테이너를 채우도록 설정 */
+    width: 100%;
+  }
+  
+  .text-container {
+    text-align: center; /* 내용 가운데 정렬 */
+    max-width: 900px; /* 텍스트 컨테이너의 최대 너비 설정 */
+  }
+  
+  .Maintext {
+    font-size: 60px;
+  }
+  
+  .Subtext {
+    font-size: 40px;
+  }
+  
+  .Second-container {
+    margin: 10px; /* 여백 설정 */
+  }
+  
+  .Support-item-container {
+    border-color: #3f3538;
+    border-radius: 10px;
+    background-color: #c01f4f;    
+    margin: 10px; /* 여백 설정 */
+    padding-bottom: 83.3333%; /* 6:5 비율에 대한 백분율 */
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .Support-item-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+  }
+  

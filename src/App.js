@@ -4,6 +4,7 @@ import Notification from './Pages/Menu/Notification.jsx';
 import AboutUs from './Pages/Menu/AboutUs.jsx';
 import AboutProduct from './Pages/Menu/AboutProduct.jsx';
 import ContactUs from './Pages/Menu/ContactUs.jsx';
+import SupportPage from './Pages/Menu/SupportPage.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Routes, Route, Navigate} from "react-router-dom";
 import Menu from './components/Navbar.jsx';
@@ -16,8 +17,9 @@ function App() {
         <Route path='/' element={<Main></Main>}></Route>
         <Route path='/aboutus' element={<AboutUs></AboutUs>}></Route>
         <Route path='/product' element={<AboutProduct></AboutProduct>}></Route>
-        <Route path='/support' element={<ContactUs></ContactUs>}></Route>
+        <Route path='/contacus' element={<ContactUs></ContactUs>}></Route>
         <Route path='/notification' element={<Notification></Notification>}></Route>
+        <Route path='/support' element={<SupportPage></SupportPage>}></Route>
       </Routes>
       <Footer/>
     </div>
