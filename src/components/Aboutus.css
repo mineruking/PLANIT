@@ -1,7 +1,7 @@
 /* Aboutus.css */
 .titletext1 {
   color: #036D83;
-  font-size: 25px;
+  font-size: 20px; /* 글자 크기 줄임 */
 }
 
 
@@ -9,52 +9,26 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 150px; /* 컨테이너에 패딩 추가 */
+  padding: 80px; /* 컨테이너에 패딩 추가 */
   background-color: white; /* 배경색상 변경 */
-  height: 100vh; /* 화면 전체 높이만큼 컨테이너를 채우도록 설정 */
 }
 
 .picture1 {
   height: 300px;
   width: 300px; /* 수정: weight -> width */
-  padding: 15px;
+  padding: 5px;
 }
+
+.text-container1 {
+  max-width: 50%; /* 텍스트 컨테이너의 최대 너비 설정 */
+  padding: 60px;
+  text-align: left; /* 왼쪽 정렬 */
+}
+
 
 .titletext2 {
   color: #53415E;
-  font-size: 25px;
-}
-
-.text-container2 {
-  max-width: 50%; /* 텍스트 컨테이너의 최대 너비 설정 */
-  padding: 60px;
-}
-
-.Maintext {
-  color: black;
-  font-size: 55px;
-  font-weight: bold;
-}
-
-.Subtext {
-  color: black;
-  font-size: 25px;
-}
-
-.Second-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px; /* 컨테이너에 패딩 추가 */
-  background-color: #f6feff; /* 배경색상 변경 */
-  height: 100vh; /* 화면 전체 높이만큼 컨테이너를 채우도록 설정 */
-}
-
-.picture2 {
-  height: 430px;
-  width: 600px; /* 수정: weight -> width */
-  padding: 15px;
+  font-size: 20px; /* 글자 크기 줄임 */
 }
 
 .text-container2 {
@@ -63,18 +37,45 @@
   text-align: center;
 }
 
+.Maintext {
+  color: black;
+  font-size: 45px; /* 글자 크기 줄임 */
+  font-weight: bold;
+}
+
+.Subtext {
+  max-width: 100%;
+  color: black;
+  font-size: 20px; /* 글자 크기 줄임 */
+}
+
+.Second-container {
+  max-width: 100%; /* 텍스트 컨테이너의 최대 너비 설정 */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px; /* 컨테이너에 패딩 추가 */
+  background-color: #f6feff; /* 배경색상 변경 */
+}
+
+.picture2 {
+  height: 430px;
+  width: 600px; /* 수정: weight -> width */
+  padding: 15px;
+}
+
 .Third-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px; /* 컨테이너에 패딩 추가 */
+  padding: 80px; /* 컨테이너에 패딩 추가 */
   background-color: #fefaff; /* 배경색상 변경 */
-  height: 100vh; /* 화면 전체 높이만큼 컨테이너를 채우도록 설정 */
 }
 
 .text-container3 {
   max-width: 50%; /* 텍스트 컨테이너의 최대 너비 설정 */
-  padding: 60px;
+  padding: 100px;
   text-align: right;
 }
 
@@ -90,22 +91,21 @@
 
 .titletext3 {
   color: #AA1439;
-  font-size: 25px;
+  font-size: 20px; /* 글자 크기 줄임 */
 }
 
 .text-container4 {
   max-width: 50%; /* 텍스트 컨테이너의 최대 너비 설정 */
   padding: 60px;
-  text-align: center;
+  text-align: left; /* 왼쪽 정렬 */
 }
 
 .Fourth-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 150px; /* 컨테이너에 패딩 추가 */
+  padding: 100px; /* 컨테이너에 패딩 추가 */
   background-color: #FEEDF1; /* 배경색상 변경 */
-  height: 100vh; /* 화면 전체 높이만큼 컨테이너를 채우도록 설정 */
 }
 
 .picture4 {
@@ -116,7 +116,7 @@
 
 .titletext4 {
   color: #FAAC04;
-  font-size: 25px;
+  font-size: 20px; /* 글자 크기 줄임 */
 }
 
 .text-container5 {
@@ -132,11 +132,16 @@
   align-items: center;
   padding: 150px; /* 컨테이너에 패딩 추가 */
   background-color: #FFFDF8; /* 배경색상 변경 */
-  height: 100vh; /* 화면 전체 높이만큼 컨테이너를 채우도록 설정 */
 }
 
 .Subtext2 {
   color: black;
-  font-size: 25px;
+  font-size: 20px; /* 글자 크기 줄임 */
   font-weight: bold;
+}
+
+/* Aboutus.css 또는 다른 CSS 파일에 추가 */
+.custom-col {
+  font-size: 20px; /* 원하는 글자 크기로 조정 */
+  text-align: left; /* 왼쪽 정렬 */
 }
