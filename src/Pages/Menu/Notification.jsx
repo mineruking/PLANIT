@@ -7,9 +7,7 @@ const Notification = () => {
     const navigate = useNavigate();
     
     return(
-        <div>
-            Notification
-        </div>
+        <h>Notification</h>
     )
 }
 
