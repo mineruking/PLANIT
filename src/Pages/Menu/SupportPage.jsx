@@ -12,6 +12,10 @@
   const SupportPage = () => {
     const navigate = useNavigate();
 
+    const handleNavigate = (path) => {
+      navigate(path);
+    };
+
     return (
       <>
         <div className='supportContainer'>
@@ -24,46 +28,63 @@
                 고객의 활용 및 운용을 원활히 돕고 있습니다.</p>
             </div>
           </div>
-
           <div className='supportItemContainer'>
-            <Container>
-              <Row>
-                <Col md={5} className="Support-item1">
-                  <div className="Support-item-container">
-                    <strong style={{fontSize:"30px", textAlign:"center"}}>원격 기술 지원</strong>
-                    <div className="Support-item-image">
-                      <img
-                        alt=""
-                        src={pic1}
-                      />
-                    </div>
-                    <p>손쉬운 해결을 원하시나요 ?</p>
-                    <p>원격 기술 지원 센터에 방문해보세요 !</p>
-                  </div>
-                </Col>
-                <Col md={5} className="Support-item2">
-                  <div className="Support-item-container">
-                    <div className="Support-item-image">
-                      <img
-                        alt=""
-                        src={pic2}
-                      />
-                    </div>
-                  </div>
-                </Col>
-                <Col md={5} className="Support-item3">
-                  <div className="Support-item-container">
-                    <div className="Support-item-image">
-                      <img
-                        alt=""
-                        src={pic3}
-                      />
-                    </div>
-                  </div>
-                </Col>
-              </Row>
-            </Container>
-          </div>
+        <Container>
+          <Row>
+            <Col className="support-item">
+              <div className="support-item-content">
+                <h2><strong>원격 기술 지원</strong></h2>
+                <img
+                  alt="원격 기술 지원"
+                  src={pic1}
+                  className="support-item-image"
+                />
+                <p>원격 기술 지원을 통해 <br /> 문제를 신속하게 해결하세요!</p>
+                <button 
+                  className="support-button"
+                  onClick={() => handleNavigate('/support/OnlineSupport')}
+                >
+                  더보기
+                </button>
+              </div>
+            </Col>
+            <Col className="support-item">
+              <div className="support-item-content">
+                <h2><strong>기술 도입 상담</strong></h2>
+                <img
+                  alt="기술 도입 상담"
+                  src={pic2}
+                  className="support-item-image"
+                />
+                <p>새로운 기술 도입에 대한 상담을 원하시면 <br /> 지금 바로 연락주세요!</p>
+                <button 
+                  className="support-button"
+                  onClick={() => handleNavigate('/remote-support')}
+                >
+                더보기
+                </button>
+              </div>
+            </Col>
+            <Col className="support-item">
+              <div className="support-item-content">
+                <h2><strong>1:1 상담</strong></h2>
+                <img
+                  alt="1:1 상담"
+                  src={pic3}
+                  className="support-item-image"
+                />
+                <p>기술지원과 관련된 1:1 상담을 원하시면 <br /> 여기를 클릭하세요!</p>
+                <button 
+                  className="support-button"
+                  onClick={() => handleNavigate('/support/OneOnOneSupport')}
+                >
+                더보기
+                </button>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </div>
         </div>
       </>
     );

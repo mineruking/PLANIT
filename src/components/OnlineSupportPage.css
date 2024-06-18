@@ -1,0 +1,23 @@
+.FirstContainer{
+    background-color: #FEEDF1; /* 배경색상 변경 */
+}
+
+.text-center mb-5{
+
+}
+
+.my-5 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 100%;
+}
+  
+.stepContainer {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+  
+.display-4 {
+    color: #a7585f; /* 제목 글자색 */
+    font-weight: bold; /* 제목 글자 두께 */
+}

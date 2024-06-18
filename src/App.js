@@ -5,6 +5,8 @@ import AboutUs from './Pages/Menu/AboutUs.jsx';
 import AboutProduct from './Pages/Menu/AboutProduct.jsx';
 import ContactUs from './Pages/Menu/ContactUs.jsx';
 import SupportPage from './Pages/Menu/SupportPage.jsx';
+import OnlineSupportPage from './Pages/Menu/OnlineSupportPage.jsx';
+import OneOnOneSupportPage from './Pages/Menu/OneOnOneSupportPage.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Routes, Route, Navigate} from "react-router-dom";
 import Menu from './components/Navbar.jsx';
@@ -20,6 +22,8 @@ function App() {
         <Route path='/contacus' element={<ContactUs></ContactUs>}></Route>
         <Route path='/notification' element={<Notification></Notification>}></Route>
         <Route path='/support' element={<SupportPage></SupportPage>}></Route>
+        <Route path='/support/OnlineSupport' element={<OnlineSupportPage></OnlineSupportPage>}></Route>
+        <Route path='/support/OneOnOneSupport' element={<OneOnOneSupportPage></OneOnOneSupportPage>}></Route>
       </Routes>
       <Footer/>
     </div>

@@ -1,3 +1,18 @@
+.nav-link-hover-notification,
+.nav-link-hover-aboutus,
+.nav-link-hover-product,
+.nav-link-hover-support {
+  margin-right: 0; /* Remove previous margin */
+  white-space: nowrap; /* Prevent line breaks */
+  overflow: visible; /* Show overflowing content */
+  text-overflow: ellipsis; /* Show ellipsis for overflowing text */
+  color: black; /* Default text color */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Ensure inline-block display for proper alignment */
+  text-align: right; /* Right-align the text */
+  width: 100%; /* Ensure full width */
+}
+
 .nav-link-hover-notification:hover {
     color: #a5d0d6 !important; /* Change the color as desired */
   }

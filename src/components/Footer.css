@@ -1,7 +1,6 @@
 /* Footer.css */
 
 .footer-container {
-  background-color: #ffffff; /* 배경 색상 */
   padding: 0; /* 패딩 */
   border-top: 1px solid #ffffff; /* 테두리 */
 }
@@ -38,4 +37,7 @@
 .align-items-center{
   position: relative;
   right: 120px;
+  background-color: #ffffff;
+  margin-left: 120px;
+  margin-right: 0px;
 }

@@ -1,0 +1,12 @@
+.FirstContainer{
+    background-color: #FFFDF8; /* 배경색상 변경 */
+}
+
+.display-4 {
+    color: #ffd000e0; /* 제목 글자색 */
+    font-weight: bold; /* 제목 글자 두께 */
+}
+
+.font-weight-bold{
+    font-weight: bold;
+}
