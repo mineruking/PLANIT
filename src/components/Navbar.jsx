@@ -26,9 +26,6 @@ function Menu() {
         <Nav className="me-auto">
           <Row style={{ width: '100%' }}>
             <Col xs={3}>
-              <Link to="/notification" className="nav-link-hover-notification" style={{ fontSize: '18px', fontWeight: 'bold' }}>공지사항</Link>
-            </Col>
-            <Col xs={3}>
               <Link to="/aboutus" className="nav-link-hover-aboutus" style={{ fontSize: '18px', fontWeight: 'bold' }}>회사 소개</Link>
             </Col>
             <Col xs={3}>
