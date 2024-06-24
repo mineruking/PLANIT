@@ -1,10 +1,16 @@
-.FirstContainer{
-    background-color: #FEEDF1; /* 배경색상 변경 */
+.FirstContainer1{
+    background-color: #fde5eb; /* 배경색상 변경 */
 }
 
-.text-center mb-5{
-
+.white-border{
+    border-color: #fde5eb; /* 배경색상 변경 */
 }
+
+.border.rounded.p-4.mb-4.red-border {
+    background-color: white; /* 박스의 배경색을 흰색으로 설정 */
+    padding: 1rem; /* 내부 간격을 1rem으로 설정 (p-4 클래스에 해당) */
+    margin-bottom: 1rem; /* 아래쪽 마진을 1rem으로 설정 (mb-4 클래스에 해당) */
+  }
 
 .my-5 {
     margin-top: 3rem;
@@ -17,7 +23,11 @@
     margin-bottom: 2rem;
 }
   
-.display-4 {
-    color: #a7585f; /* 제목 글자색 */
+.display{
+    color: #e90817; /* 제목 글자색 */
     font-weight: bold; /* 제목 글자 두께 */
+}
+
+.red-border {
+    border-color: rgb(187, 25, 25) !important;
 }

@@ -2,6 +2,14 @@
     background-color: #FFFDF8; /* 배경색상 변경 */
 }
 
+
+.border.rounded.p-4.mb-4 {
+    background-color: white; /* 박스의 배경색을 흰색으로 설정 */
+    padding: 1rem; /* 내부 간격을 1rem으로 설정 (p-4 클래스에 해당) */
+    margin-top: 2rem; /* 아래쪽 마진을 1rem으로 설정 (mb-4 클래스에 해당) */
+  }
+
+
 .display-4 {
     color: #ffd000e0; /* 제목 글자색 */
     font-weight: bold; /* 제목 글자 두께 */
@@ -10,3 +18,17 @@
 .font-weight-bold{
     font-weight: bold;
 }
+
+.big-solid {
+    border-color: #000000;
+    border:none;
+    border-top: 5px solid ; /* 선의 색상과 두께 설정 */
+    margin: 1rem auto; /* 위아래 마진 설정 */
+  }
+  
+  .small-solid {
+    width: 95%;
+    border:none;
+    border-top: 3px solid #000000; /* 선의 색상과 두께 설정 */
+    margin: 0rem auto;
+  }

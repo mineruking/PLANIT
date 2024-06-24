@@ -30,7 +30,7 @@
   }
 .btn-reverse-color:hover {
   background-color: #0C5A89 !important; /* 호버 시 배경색 */
-  color: white !important; /* 호버 시 글자색 */
+  color: rgba(255, 255, 255, 0.575) !important; /* 호버 시 글자색 */
 }
 .link-reverse-color-more:hover {
   color: #523E5A !important; 

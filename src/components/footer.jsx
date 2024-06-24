@@ -8,7 +8,7 @@ import './Footer.css'; // 스타일 시트를 불러옵니다.
 
 function Footer() {
   return (
-    <Container className="footer-container">
+    <Container fluid className="footer-container">
         <Row className="align-items-center">
             <Col xs={12} md={3} className="logo-col">
                 <div className="logo-container">
