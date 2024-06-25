@@ -1,5 +1,6 @@
-.FirstContainer{
+.one-on-one-support-page{
     background-color: #FFFDF8; /* 배경색상 변경 */
+    height: calc(100vh - 61px);
 }
 
 

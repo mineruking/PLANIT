@@ -1,4 +1,20 @@
-.nav-link-hover-notification,
+.navbar-custom {
+  transition: top 0.3s;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-custom.hide {
+  top: -80px; /* Navbar height */
+}
+
+.navbar-custom.show {
+  top: 0;
+}
+
 .nav-link-hover-aboutus,
 .nav-link-hover-product,
 .nav-link-hover-support {
@@ -13,27 +29,25 @@
   width: 100%; /* Ensure full width */
 }
 
-.nav-link-hover-notification:hover {
-    color: #a5d0d6 !important; /* Change the color as desired */
-  }
-  
-  .nav-link-hover-aboutus:hover {
-    color: #f4defa !important; /* Change the color as desired */
-  }
-  
-  .nav-link-hover-product:hover {
-    color: #f7afc1 !important; /* Change the color as desired */
-  }
-  
-  .nav-link-hover-support:hover {
-    color: rgb(255, 255, 147) !important; /* Change the color as desired */
-  }
+.nav-link-hover-aboutus:hover {
+  color: #f4defa !important; /* Change the color as desired */
+}
+
+.nav-link-hover-product:hover {
+  color: #f7afc1 !important; /* Change the color as desired */
+}
+
+.nav-link-hover-support:hover {
+  color: rgb(255, 255, 147) !important; /* Change the color as desired */
+}
+
 .btn-reverse-color:hover {
   background-color: #0C5A89 !important; /* 호버 시 배경색 */
   color: rgba(255, 255, 255, 0.575) !important; /* 호버 시 글자색 */
 }
+
 .link-reverse-color-more:hover {
-  color: #523E5A !important; 
+  color: #523E5A !important;
 }
 
 @media (max-width: 991px) {
@@ -43,7 +57,10 @@
   }
 }
 
-.nav-link-hover-notification, .nav-link-hover-aboutus, .nav-link-hover-product, .nav-link-hover-support {
+.nav-link-hover-notification,
+.nav-link-hover-aboutus,
+.nav-link-hover-product,
+.nav-link-hover-support {
   margin-right: 80px; /* 오른쪽 마진 추가 */
   white-space: nowrap; /* Prevent line breaks */
   overflow: visible; /* Hide content that overflows */

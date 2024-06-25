@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -10,8 +10,29 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './Navbar.css'; // Import the CSS file
 
 function Menu() {
+  const [showNavbar, setShowNavbar] = useState(true);
+  const [lastScrollTop, setLastScrollTop] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      if (scrollTop > lastScrollTop) {
+        setShowNavbar(false);
+      } else {
+        setShowNavbar(true);
+      }
+      setLastScrollTop(scrollTop);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [lastScrollTop]);
+
   return (
-    <Navbar expand="lg" style={{ backgroundColor: 'transparent', position: 'fixed', top: 0, width: '100%', zIndex: 1000 }} variant='light'>
+    <Navbar expand="lg" className={`navbar-custom ${showNavbar ? 'show' : 'hide'}`} variant='light'>
       <Container className="justify-content-between">
         <Navbar.Brand href="/"><img
           alt=""

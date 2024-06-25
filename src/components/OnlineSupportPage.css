@@ -1,5 +1,6 @@
-.FirstContainer1{
+.online-support-page{
     background-color: #fde5eb; /* 배경색상 변경 */
+    height: calc(100vh - 61px);
 }
 
 .white-border{

@@ -14,7 +14,7 @@ const OnlineSupportPage = () => {
             <Col className="subTitle">
               {/* text-center mb-5 클래스가 적용된 요소 */}
               <div>
-                <br></br><br></br><br></br>
+                <br></br><br></br><br></br><br></br>
                 <h1 className="display">온라인 고객지원</h1> <br></br>
                 <p className="lead">원격 지원을 통해 <br></br>간편하게 문제를 해결해보세요!</p>
                 <small>*플레니트의 규정 라이센스를 준수하여 서비스를 제공합니다.</small>

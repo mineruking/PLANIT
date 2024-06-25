@@ -19,14 +19,14 @@ function App() {
       <Menu />
       <div className="content">
         <Routes>
-          <Route path='/' element={<Main />} />
-          <Route path='/aboutus' element={<AboutUs />} />
-          <Route path='/product' element={<AboutProduct />} />
-          <Route path='/contacus' element={<ContactUs />} />
-          <Route path='/notification' element={<Notification />} />
-          <Route path='/support' element={<SupportPage />} />
-          <Route path='/support/OnlineSupport' element={<OnlineSupportPage />} />
-          <Route path='/support/OneOnOneSupport' element={<OneOnOneSupportPage />} />
+          <Route path='/' element={<div className="main-page"><Main /></div>} />
+          <Route path='/aboutus' element={<div className="about-us-page"><AboutUs /></div>} />
+          <Route path='/product' element={<div className="product-page"><AboutProduct /></div>} />
+          <Route path='/contacus' element={<div className="contact-us-page"><ContactUs /></div>} />
+          <Route path='/notification' element={<div className="notification-page"><Notification /></div>} />
+          <Route path='/support' element={<div className="support-page"><SupportPage /></div>} />
+          <Route path='/support/OnlineSupport' element={<div className="online-support-page"><OnlineSupportPage /></div>} />
+          <Route path='/support/OneOnOneSupport' element={<div className="one-on-one-support-page"><OneOnOneSupportPage /></div>} />
         </Routes>
       </div>
       <Footer />
