@@ -1,7 +1,7 @@
 /* Footer.css */
 
 .footer-container {
-  padding: 0; /* 패딩 */
+  width: 100%;
   border-top: 1px solid #ffffff; /* 테두리 */
 }
 
