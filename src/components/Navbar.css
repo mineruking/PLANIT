@@ -30,24 +30,29 @@
 }
 
 .nav-link-hover-aboutus:hover {
-  color: #f4defa !important; /* Change the color as desired */
+  color: #0C5A89 !important; /* Change the color as desired */
+  transition: color 0.3s ease;
 }
 
 .nav-link-hover-product:hover {
   color: #f7afc1 !important; /* Change the color as desired */
+  transition: color 0.3s ease;
 }
 
 .nav-link-hover-support:hover {
   color: rgb(255, 255, 147) !important; /* Change the color as desired */
+  transition: color 0.3s ease;
 }
 
 .btn-reverse-color:hover {
   background-color: #0C5A89 !important; /* 호버 시 배경색 */
   color: rgba(255, 255, 255, 0.575) !important; /* 호버 시 글자색 */
+  transition: color 0.3s ease;
 }
 
 .link-reverse-color-more:hover {
   color: #523E5A !important;
+  transition: color 0.3s ease;
 }
 
 @media (max-width: 991px) {
