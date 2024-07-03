@@ -1,66 +1,69 @@
-/* Aboutus.css */
 .titletext1 {
   color: #036D83;
-  font-size: 20px; /* 글자 크기 줄임 */
+  font-size: 20px;
 }
 
 .First-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 80px; /* 컨테이너에 패딩 추가 */
-  background-color: white; /* 배경색상 변경 */
+  padding: 80px;
+  background-color: white;
+  flex-wrap: wrap; /* 추가: 작은 화면에서의 반응형 레이아웃 */
 }
 
 .picture1 {
-  height: 300px;
-  width: 300px; /* 수정: weight -> width */
+  height: auto;
+  width: 100%;
+  max-width: 300px;
   padding: 5px;
 }
 
 .text-container1 {
-  max-width: 50%; /* 텍스트 컨테이너의 최대 너비 설정 */
-  padding: 60px;
-  text-align: left; /* 왼쪽 정렬 */
+  max-width: 100%;
+  padding: 20px;
+  text-align: left;
+  flex: 1;
 }
-
 
 .titletext2 {
   color: #53415E;
-  font-size: 20px; /* 글자 크기 줄임 */
+  font-size: 20px;
 }
 
 .text-container2 {
-  max-width: 50%; /* 텍스트 컨테이너의 최대 너비 설정 */
-  padding: 60px;
+  max-width: 100%;
+  padding: 20px;
   text-align: center;
+  flex: 1;
 }
 
 .Maintext {
   color: black;
-  font-size: 45px; /* 글자 크기 줄임 */
+  font-size: 3vw;
   font-weight: bold;
 }
 
 .Subtext {
   max-width: 100%;
   color: black;
-  font-size: 20px; /* 글자 크기 줄임 */
+  font-size: 1.5vw;
 }
 
 .Second-container {
-  max-width: 100%; /* 텍스트 컨테이너의 최대 너비 설정 */
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 20px; /* 컨테이너에 패딩 추가 */
-  background-color: #f6feff; /* 배경색상 변경 */
+  padding: 20px;
+  background-color: #f6feff;
 }
 
 .picture2 {
-  height: 430px;
-  width: 600px; /* 수정: weight -> width */
+  height: auto;
+  width: 100%;
+  max-width: 600px;
   padding: 15px;
 }
 
@@ -68,19 +71,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 80px; /* 컨테이너에 패딩 추가 */
-  background-color: #fefaff; /* 배경색상 변경 */
+  padding: 80px;
+  background-color: #fefaff;
+  flex-wrap: wrap; /* 추가: 작은 화면에서의 반응형 레이아웃 */
 }
 
 .text-container3 {
-  max-width: 50%; /* 텍스트 컨테이너의 최대 너비 설정 */
-  padding: 100px;
+  max-width: 100%;
+  padding: 20px;
   text-align: right;
+  flex: 1;
 }
 
 .picture3 {
-  height: 645px;
-  width: 900px; /* 수정: weight -> width */
+  height: auto;
+  width: 100%;
+  max-width: 900px;
   padding: 15px;
 }
 
@@ -90,38 +96,42 @@
 
 .titletext3 {
   color: #AA1439;
-  font-size: 20px; /* 글자 크기 줄임 */
+  font-size: 20px;
 }
 
 .text-container4 {
-  max-width: 50%; /* 텍스트 컨테이너의 최대 너비 설정 */
-  padding: 60px;
-  text-align: left; /* 왼쪽 정렬 */
+  max-width: 100%;
+  padding: 20px;
+  text-align: left;
+  flex: 1;
 }
 
 .Fourth-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 100px; /* 컨테이너에 패딩 추가 */
-  background-color: #FEEDF1; /* 배경색상 변경 */
+  padding: 100px;
+  background-color: #FEEDF1;
+  flex-wrap: wrap; /* 추가: 작은 화면에서의 반응형 레이아웃 */
 }
 
 .picture4 {
-  height: 450px;
-  width: 750px; /* 수정: weight -> width */
+  height: auto;
+  width: 100%;
+  max-width: 750px;
   padding: 15px;
 }
 
 .titletext4 {
   color: #FAAC04;
-  font-size: 20px; /* 글자 크기 줄임 */
+  font-size: 20px;
 }
 
 .text-container5 {
-  max-width: 50%; /* 텍스트 컨테이너의 최대 너비 설정 */
-  padding: 60px;
+  max-width: 100%;
+  padding: 20px;
   text-align: center;
+  flex: 1;
 }
 
 .Fifth-container {
@@ -129,18 +139,36 @@
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  padding: 150px; /* 컨테이너에 패딩 추가 */
-  background-color: #FFFDF8; /* 배경색상 변경 */
+  padding: 150px;
+  background-color: #FFFDF8;
 }
 
 .Subtext2 {
   color: black;
-  font-size: 20px; /* 글자 크기 줄임 */
+  font-size: 1.5vw;
   font-weight: bold;
 }
 
-/* Aboutus.css 또는 다른 CSS 파일에 추가 */
 .custom-col {
-  font-size: 20px; /* 원하는 글자 크기로 조정 */
-  text-align: left; /* 왼쪽 정렬 */
+  font-size: 1.5vw;
+  text-align: left;
+}
+
+/* 반응형 디자인을 위한 미디어 쿼리 */
+@media (max-width: 768px) {
+  .Maintext {
+    font-size: 5vw;
+  }
+
+  .Subtext {
+    font-size: 3vw;
+  }
+
+  .Subtext2 {
+    font-size: 3vw;
+  }
+
+  .custom-col {
+    font-size: 3vw;
+  }
 }
