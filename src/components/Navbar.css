@@ -15,6 +15,7 @@
   top: 0;
 }
 
+.nav-link-hover-notification,
 .nav-link-hover-aboutus,
 .nav-link-hover-product,
 .nav-link-hover-support {
@@ -29,8 +30,12 @@
   width: 100%; /* Ensure full width */
 }
 
+.nav-link-hover-notification:hover{
+  color: #10a5a5 !important; /* Change the color as desired */
+}
+
 .nav-link-hover-aboutus:hover {
-  color: #f4defa !important; /* Change the color as desired */
+  color: #4960ddab !important; /* Change the color as desired */
 }
 
 .nav-link-hover-product:hover {
