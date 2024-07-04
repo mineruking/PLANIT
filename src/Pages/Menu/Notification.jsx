@@ -1,48 +1,65 @@
-//Dummy Data
-import { useState, useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../../components/Notification.css'; // 경로에 맞게 수정
 
-const NotificationDetail = () => {
-  const { id } = useParams();
-  const navigate = useNavigate();
-  const [notification, setNotification] = useState(null);
+const notices = [
+  { id: 102, importance: '일반', title: '2024년도 플래니트 현황', attachment: '', date: '', views: '' },
+  { id: 101, importance: '중요', title: '2024년도 플래니트 현황', attachment: '', date: '', views: '' },
+  { id: 100, importance: '일반', title: '2024년도 플래니트 현황', attachment: '', date: '', views: '' },
+  { id: 99, importance: '일반', title: '2024년도 플래니트 현황', attachment: '', date: '', views: '' },
+  { id: 98, importance: '중요', title: '2024년도 플래니트 현황', attachment: '', date: '', views: '' },
+  { id: 97, importance: '일반', title: '2024년도 플래니트 현황', attachment: '', date: '', views: '' },
+  { id: 96, importance: '일반', title: '2024년도 플래니트 현황', attachment: '', date: '', views: '' },
+];
 
-  useEffect(() => {
-    // Fetch notification data based on the id
-    const fetchNotification = async () => {
-      try {
-        const response = await fetch(`/api/notifications/${id}`);
-        const data = await response.json();
-        setNotification(data);
-      } catch (error) {
-        console.error('Error fetching notification:', error);
-      }
-    };
-
-    fetchNotification();
-  }, [id]);
-
-  const handleClose = () => {
-    navigate('/notifications');
-  };
-
-  return (
-    <div className="container my-5">
-      {notification ? (
-        <div>
-          <h2>{notification.title}</h2>
-          <p>{notification.message}</p>
-          <p>Date: {new Date(notification.createdAt).toLocaleString()}</p>
-          <button className="btn btn-secondary" onClick={handleClose}>
-            Close
-          </button>
+const Notification = () => {
+  return(
+    <>
+      <div className='notificationContainer'>
+        <div className='text-container'>
+          <div className='Maintext'>
+            <strong>공지 사항</strong>
+          </div>
+          <table className="notice-table">
+            <thead>
+              <tr>
+                <th>번호</th>
+                <th>중요도</th>
+                <th>제목</th>
+                <th>첨부파일</th>
+                <th>작성일</th>
+                <th>조회수</th>
+              </tr>
+            </thead>
+          <tbody>
+            {notices.map(notice => (
+              <tr key={notice.id}>
+                <td>{notice.id}</td>
+                <td>{notice.importance}</td>
+                <td>{notice.title}</td>
+                <td>{notice.attachment}</td>
+                <td>{notice.date}</td>
+                <td>{notice.views}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+          <div className="pagination">
+            <a href="#1">1</a>
+            <a href="#2">2</a>
+            <a href="#3">3</a>
+            <a href="#4">4</a>
+            <a href="#5">5</a>
+            <a href="#6">6</a>
+            <a href="#7">7</a>
+            <a href="#8">8</a>
+            <a href="#9">9</a>
+            <a href="#10">10</a>
+          </div>
         </div>
-      ) : (
-        <p>Loading...</p>
-      )}
-    </div>
-  );
+      </div>
+    </>
+  )
 };
 
-export default NotificationDetail;
+export default Notification;

@@ -21,14 +21,14 @@
         <div className='supportContainer'>
           <div className='text-container'>
             <div className='Maintext'>
-              <strong>고객지원</strong><br /><br />
+              <strong>고객 지원</strong><br /><br />
             </div>
-            <div className="Subtext">
-              <p>플래니트는 적극적이고 능동적인 기술지원을 통해 <br />
+          <div className="Subtext">
+            <p>플래니트는 적극적이고 능동적인 기술지원을 통해 <br />
                 고객의 활용 및 운용을 원활히 돕고 있습니다.</p>
-            </div>
           </div>
-          <div className='supportItemContainer'>
+        </div>
+        <div className='supportItemContainer'>
         <Container>
           <Row>
             <Col className="support-item">
