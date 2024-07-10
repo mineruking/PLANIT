@@ -6,6 +6,10 @@ import d1 from '../../images/d1.png';
 import d2 from '../../images/d2.png';
 import d3 from '../../images/d3.png';
 import d4 from '../../images/d4.png';
+import d5 from '../../images/d5.png';
+import d6 from '../../images/d6.png';
+import d7 from '../../images/d7.png';
+import d8 from '../../images/d8.png';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -51,7 +55,27 @@ const AboutPage = () => {
             </Row>
             <Row className="gx-4 gy-4">
               <Col className="AboutP-item">
+                <img alt="" src={d5} className="img5" />
+              </Col>
+            </Row>
+            <Row className="gx-4 gy-4">
+              <Col className="AboutP-item">
+                <img alt="" src={d7} className="img7" />
+              </Col>
+            </Row>
+            <Row className="gx-4 gy-4">
+              <Col className="AboutP-item">
                 <img alt="" src={d4} className="img4" />
+              </Col>
+            </Row>
+            <Row className="gx-4 gy-4">
+              <Col className="AboutP-item">
+                <img alt="" src={d6} className="img6" />
+              </Col>
+            </Row>
+            <Row className="gx-4 gy-4">
+              <Col className="AboutP-item">
+                <img alt="" src={d8} className="img8" />
               </Col>
             </Row>
           </Container>
