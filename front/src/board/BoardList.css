@@ -1,43 +1,117 @@
-.post-list {
+.boardContainer {
+  background-color: rgb(255, 255, 255);
+  display: flex;  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 61px); /* 네비게이션 바의 높이만큼 뺀 화면 전체 높이 */
+  width: 100%;
+  margin-top: 56px; /* 네비게이션 바의 높이만큼 위쪽 마진 추가 */
+}
+
+.text-container {
+  text-align: center; /* 내용 가운데 정렬 */
+  max-width: 900px; /* 텍스트 컨테이너의 최대 너비 설정 */
+  font-size: 60px;
+}
+
+/* 전체 테이블 스타일링 */
+.boardContainer {
+  margin: 20px; /* 테이블 주변에 여백을 추가 */
+}
+
+.text-container {
+  margin-bottom: 20px; /* 제목과 테이블 사이에 여백을 추가 */
+}
+
+a {
+  text-decoration: none; /* 링크의 밑줄을 제거 */
+  color: #007bff; /* 링크 색상 변경 */
+  margin-bottom: 10px; /* 링크 아래 여백 추가 */
+  display: inline-block; /* 링크를 인라인 블록으로 설정 */
+}
+
+a:hover {
+  text-decoration: underline; /* 링크에 호버 시 밑줄 추가 */
+}
+
+table {
+  width: 80%; /* 테이블을 전체 너비로 설정 */
+  border-collapse: collapse; /* 테두리 병합 */
+  font-size: 20px;
+}
+
+thead th {
+  background-color: #f4f4f4; /* 헤더 배경색 */
+  padding: 10px; /* 헤더 셀에 패딩 추가 */
+  text-align: center; /* 텍스트 왼쪽 정렬 */
+  border-bottom: 2px solid #ddd; /* 헤더 셀 하단 테두리 */
+}
+
+/* 각 열의 너비를 정의 */
+th.id {
+  width: 15%; /* '번호' 열 너비 */
+}
+
+th.title {
+  width: 40%; /* '제목' 열 너비, 가장 넓게 설정 */
+}
+
+th.fileAttached,
+th.createdAt,
+th.hits {
+  width: 15%; /* 나머지 열의 너비 */
+}
+
+/* 테이블 셀 스타일링 */
+td {
+  border: 1px solid #ddd; /* 셀 테두리 */
+  padding: 8px; /* 셀 패딩 */
+  text-align: center; 
+}
+
+/* 행 호버 효과 */
+tbody tr:hover {
+  background-color: #f1f1f1; /* 행 호버 시 배경색 변경 */
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  table {
     width: 80%;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
+    display: block; /* 작은 화면에서 테이블을 블록으로 변경 */
+    overflow-x: auto; /* 수평 스크롤 가능 */
+    white-space: nowrap; /* 텍스트가 줄바꿈되지 않도록 설정 */
   }
-  
-  .post-list h1 {
-    text-align: center;
-    margin-bottom: 20px;
+
+  th, td {
+    display: block; /* 셀을 블록으로 변경 */
+    width: 80%; /* 셀 너비 100%로 설정 */
   }
-  
-  .post-list .write-link {
-    display: block;
-    text-align: right;
-    margin-bottom: 10px;
-    color: #5cb85c;
-    text-decoration: none;
-    font-weight: bold;
+
+  th {
+    position: absolute; /* 헤더를 절대 위치로 설정 */
+    top: 0; /* 상단에 위치 */
+    left: 0; /* 왼쪽에 위치 */
+    background-color: #f4f4f4; /* 헤더 배경색 */
+    padding: 10px; /* 패딩 추가 */
   }
-  
-  .post-list .write-link:hover {
-    color: #4cae4c;
+
+  td {
+    border: none; /* 셀 테두리 제거 */
+    position: relative; /* 셀을 상대 위치로 설정 */
+    padding: 10px; /* 패딩 추가 */
+    text-align: right; /* 텍스트 오른쪽 정렬 */
   }
-  
-  .post-list table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
+
+  td::before {
+    content: attr(data-label); /* 셀의 데이터 레이블 표시 */
+    position: absolute; /* 레이블을 절대 위치로 설정 */
+    left: 0; /* 왼쪽에 위치 */
+    width: 50%; /* 레이블 너비 설정 */
+    padding: 10px; /* 패딩 추가 */
+    background-color: #f4f4f4; /* 레이블 배경색 */
+    font-weight: bold; /* 레이블을 굵게 표시 */
+    text-align: center; /* 레이블 텍스트 왼쪽 정렬 */
   }
-  
-  .post-list th, .post-list td {
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  .post-list th {
-    background-color: #f2f2f2;
-  }
-  
+}

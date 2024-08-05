@@ -14,17 +14,19 @@ const BoardList = () => {
   }, []);
 
   return (
-    <div>
-      <h1>게시판</h1>
-      <Link to="/save">글쓰기</Link>
+    <div className='boardContainer'>
+      <div className='text-container'>
+        <strong>공지사항</strong><br></br><br></br>
+      </div>
+      <Link to="BoardForm.js">글쓰기</Link>
       <table>
         <thead>
           <tr>
-            <th>번호</th>
-            <th>제목</th>
-            <th>작성자</th>
-            <th>작성시간</th>
-            <th>조회수</th>
+            <th className='id'>번호</th>
+            <th className='title'>제목</th>
+            <th className='fileAttached'>첨부파일</th>
+            <th className='createdAt'>작성일</th>
+            <th className='hits'>조회수</th>
           </tr>
         </thead>
         <tbody>
@@ -34,7 +36,7 @@ const BoardList = () => {
               <td>
                 <Link to={`/posts/${post.id}`}>{post.title}</Link>
               </td>
-              <td>{post.writer}</td>
+              <td>{post.fileAttached}</td>
               <td>{post.createdAt}</td>
               <td>{post.hits}</td>
             </tr>
