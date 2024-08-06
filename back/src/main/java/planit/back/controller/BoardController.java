@@ -1,13 +1,11 @@
 package planit.back.controller;
 
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.ui.Model;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import planit.back.dto.BoardDTO;
-import planit.back.dto.BoardFileDTO;
 import planit.back.service.BoardService;
-
 
 import java.io.IOException;
 import java.util.List;
@@ -19,61 +17,42 @@ public class BoardController {
 
     private final BoardService boardService;
 
-    @GetMapping("/save")
-    public String save(){
-        return "save";
-    }
-
     @PostMapping("/save")
-    public String save(BoardDTO boardDTO) throws IOException {
+    public ResponseEntity<String> save(@RequestBody BoardDTO boardDTO) throws IOException {
+        System.out.println("boardDTO = " + boardDTO);
         boardService.save(boardDTO);
-        System.out.println(boardDTO);
-        return "redirect:/list";
+        return ResponseEntity.status(HttpStatus.OK).body("ok"); // Return success message
     }
 
     @GetMapping("/list")
-    public String findAll(Model model) {
-        List<BoardDTO> boardDTOList = boardService.findAll();
-        model.addAttribute("boardList", boardDTOList);
-        System.out.println(boardDTOList);
-        return "list";
+    public List<BoardDTO> findAll() {
+        // Retrieve all board entities and return as JSON array
+
+        return boardService.findAll();
     }
-    
+
     @GetMapping("/{id}")
-    public String findById(@PathVariable Long id, Model model) {
-        //조회수 처리
-        boardService.updateHits(id);
-
-        //상세내용
-        BoardDTO boardDTO = boardService.findById(id);
-        model.addAttribute("board", boardDTO);
-        System.out.println("boardDTO = " + boardDTO);
-
-        if(boardDTO.getFileAttached()==1){
-            List<BoardFileDTO> boardFileDTOList = boardService.findFileList(id);
-            model.addAttribute("boardFileList", boardFileDTOList);
-        }
-        return "detail";
+    public BoardDTO findById(@PathVariable Long id) {
+        // Retrieve board details
+        return boardService.findById(id);
     }
 
     @GetMapping("/update/{id}")
-    public String update(@PathVariable Long id, Model model) {
-        BoardDTO boardDTO = boardService.findById(id);
-        model.addAttribute("board", boardDTO);
-        return "update";
+    public BoardDTO update(@PathVariable Long id) {
+        // Retrieve board details for update
+        return boardService.findById(id);
     }
 
     @PostMapping("/update/{id}")
-    public String update(BoardDTO boardDTO, Model model){
+    public BoardDTO update(@PathVariable Long id, @RequestBody BoardDTO boardDTO) {
+        boardDTO.setId(id); // Ensure the ID is set correctly in DTO
         boardService.update(boardDTO);
-        BoardDTO boardDTO1 = boardService.findById(boardDTO.getId());
-        model.addAttribute("board", boardDTO1);
-        return "detail";
+        return boardService.findById(id); // Return the updated board details
     }
 
-    @GetMapping("/delete/{id}")
-    public String delete(BoardDTO boardDTO){
-        boardService.delete(boardDTO);
-        return "redirect:/list";
+    @DeleteMapping("/delete/{id}")
+    public ResponseEntity<String> delete(@PathVariable Long id) {
+        boardService.delete(id); // ID를 사용하여 리소스를 삭제하는 서비스 호출
+        return ResponseEntity.status(HttpStatus.OK).body("ok"); // 성공 메시지 반환
     }
 }

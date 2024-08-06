@@ -5,12 +5,12 @@
 <mapper namespace="Board">
 
     <insert id="save" parameterType="board" useGeneratedKeys="true" keyProperty="id">
-        insert into board (boardTitle, boardWriter, boardPass, boardContents, fileAttached)
-        values (#{boardTitle}, #{boardWriter}, #{boardPass}, #{boardContents}, #{fileAttached})
+        insert into board (boardTitle, boardContents, fileAttached)
+        values (#{boardTitle}, #{boardContents}, #{fileAttached})
     </insert>
 
     <select id="findAll" resultType="board">
-        select id, boardTitle, boardWriter, boardHits, date_format(createdAt, "%Y-%m-%d") as createdAt
+        select id, boardTitle, boardHits, date_format(createdAt, "%Y-%m-%d") as createdAt
         from board order by id desc
     </select>
 
@@ -19,7 +19,7 @@
     </update>
 
     <select id="findById" parameterType="java.lang.Long" resultType="board">
-        select id, boardTitle, boardWriter, boardPass, boardContents, boardHits,
+        select id, boardTitle, boardContents, boardHits,
                date_format(createdAt, "%Y-%m-%d %H:%i:%s") as createdAt, fileAttached
         from board where id = #{id}
     </select>

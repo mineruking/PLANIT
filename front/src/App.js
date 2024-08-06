@@ -11,6 +11,8 @@ import { Routes, Route } from "react-router-dom";
 import Menu from './components/Navbar.jsx';
 import Footer from './components/footer.jsx';
 import BoardList from './board/BoardList.js';
+import BoardForm from './board/BoardForm.js';
+import BoardDetail from './board/BoardDetail.js';
 import './App.css'; // Custom styles if needed
 
 function App() {
@@ -22,8 +24,11 @@ function App() {
           <Route path='/' element={<div className="main-page"><Main /></div>} />
           <Route path='/aboutus' element={<div className="about-us-page"><AboutUs /></div>} />
           <Route path='/product' element={<div className="product-page"><AboutProduct /></div>} />
-          <Route path='/contacus' element={<div className="contact-us-page"><ContactUs /></div>} />
-          <Route path='/notification' element={<div className="notification-page"><BoardList /></div>} />
+          <Route path='/contactus' element={<div className="contact-us-page"><ContactUs /></div>} />
+          <Route path='/boardList' element={<div className="board-page"><BoardList /></div>} />
+          <Route path='/boardForm/new' element={<div className="board-form-page"><BoardForm /></div>} />
+          <Route path='/board/:id' element={<div className="board-detail-page"><BoardDetail /></div>} />
+          <Route path='/boardForm/update/:id' element={<div className="board-form-page"><BoardForm /></div>} />
           <Route path='/support' element={<div className="support-page"><SupportPage /></div>} />
           <Route path='/support/OnlineSupport' element={<div className="online-support-page"><OnlineSupportPage /></div>} />
           <Route path='/support/OneOnOneSupport' element={<div className="one-on-one-support-page"><OneOnOneSupportPage /></div>} />

@@ -16,8 +16,6 @@ public class BoardCreateTest {
         BoardDTO board = new BoardDTO();
 
         BoardDTO boardDTO = new BoardDTO();
-        boardDTO.setBoardWriter("Test Writer");
-        boardDTO.setBoardPass("Test Pass");
         boardDTO.setBoardTitle("Test Title");
         boardDTO.setBoardContents("Test Contents");
         boardDTO.setBoardHits(0);

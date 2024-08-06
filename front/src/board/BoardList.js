@@ -9,16 +9,27 @@ const BoardList = () => {
   useEffect(() => {
     axios.get('http://localhost:8080/board/list')
       .then(response => {
-        setPosts(response.data);
+        const data = response.data;
+        console.log(data);//test
+        if (Array.isArray(data)) {
+          setPosts(data);
+        } else {
+          console.error("API 응답 형식이 예상과 다릅니다:", data);
+          setPosts([]); // 응답이 배열이 아닐 경우 빈 배열로 설정
+        }
+      })
+      .catch(error => {
+        console.error("데이터 가져오기 오류:", error);
+        setPosts([]); // 오류 발생 시 빈 배열로 설정
       });
   }, []);
 
   return (
     <div className='boardContainer'>
       <div className='text-container'>
-        <strong>공지사항</strong><br></br><br></br>
+        <strong>공지사항</strong><br /><br />
       </div>
-      <Link to="BoardForm.js">글쓰기</Link>
+      <Link to="/boardForm/new">글쓰기</Link> {/* 링크 경로 수정 */}
       <table>
         <thead>
           <tr>
@@ -32,13 +43,13 @@ const BoardList = () => {
         <tbody>
           {posts.map((post, index) => (
             <tr key={post.id}>
-              <td>{index + 1}</td>
+              <td>{post.id}</td>
               <td>
-                <Link to={`/posts/${post.id}`}>{post.title}</Link>
+                <Link to={`/board/${post.id}`}>{post.boardTitle}</Link>
               </td>
               <td>{post.fileAttached}</td>
               <td>{post.createdAt}</td>
-              <td>{post.hits}</td>
+              <td>{post.boardHits}</td>
             </tr>
           ))}
         </tbody>

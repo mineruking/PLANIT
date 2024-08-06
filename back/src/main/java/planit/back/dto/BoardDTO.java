@@ -12,8 +12,6 @@ import java.util.List;
 @ToString
 public class BoardDTO {
     private Long id;
-    private String boardWriter;
-    private String boardPass;
     private String boardTitle;
     private String boardContents;
     private int boardHits;
@@ -27,8 +25,6 @@ public class BoardDTO {
 
     public BoardDTO(Long id, String boardWriter, String boardPass, String boardTitle, String boardContents, int boardHits, String createdAt, int fileAttached, List<MultipartFile> boardFile) {
         this.id = id;
-        this.boardWriter = boardWriter;
-        this.boardPass = boardPass;
         this.boardTitle = boardTitle;
         this.boardContents = boardContents;
         this.boardHits = boardHits;

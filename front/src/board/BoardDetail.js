@@ -24,42 +24,38 @@ const BoardDetail = () => {
 
   const handleDelete = () => {
     axios.delete(`http://localhost:8080/board/delete/${id}`)
-      .then(() => navigate('/'));
+      .then(() => navigate('/boardList'));
   };
 
   if (!post) return <div>Loading...</div>;
 
   return (
-    <div>
-      <table>
+    <div className="board-detail-container">
+      <table className="board-detail-table">
         <tbody>
           <tr>
-            <th>id</th>
+            <th>ID</th>
             <td>{post.id}</td>
           </tr>
           <tr>
-            <th>title</th>
-            <td>{post.title}</td>
+            <th>제목</th>
+            <td>{post.boardTitle}</td>
           </tr>
           <tr>
-            <th>writer</th>
-            <td>{post.writer}</td>
-          </tr>
-          <tr>
-            <th>date</th>
+            <th>작성일자</th>
             <td>{post.createdAt}</td>
           </tr>
           <tr>
-            <th>hits</th>
-            <td>{post.hits}</td>
+            <th>조회수</th>
+            <td>{post.boardHits}</td>
           </tr>
           <tr>
-            <th>contents</th>
-            <td>{post.content}</td>
+            <th>내용</th>
+            <td>{post.boardContents}</td>
           </tr>
           {post.fileAttached === 1 && (
             <tr>
-              <th>image</th>
+              <th>첨부파일</th>
               <td>
                 {files.map(file => (
                   <img
@@ -75,9 +71,11 @@ const BoardDetail = () => {
           )}
         </tbody>
       </table>
-      <button onClick={() => navigate('/board/list')}>목록</button>
-      <button onClick={() => navigate(`/board/update/${post.id}`)}>수정</button>
-      <button onClick={handleDelete}>삭제</button>
+      <div className="board-detail-buttons">
+        <button onClick={() => navigate('/boardList')}>목록</button>
+        <button onClick={() => navigate(`/boardForm/update/${post.id}`)}>수정</button>
+        <button onClick={handleDelete}>삭제</button>
+      </div>
     </div>
   );
 };

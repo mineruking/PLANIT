@@ -79,8 +79,8 @@ public class BoardService {
         boardRepository.update(boardDTO);
     }
 
-    public void delete(BoardDTO boardDTO) {
-        boardRepository.delete(boardDTO.getId());
+    public void delete(Long id) {
+        boardRepository.delete(id);
     }
 
     public List<BoardFileDTO> findFileList(Long id) {
